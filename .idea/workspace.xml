@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dadea1a7-18eb-4fb1-9729-15a83d43709f" name="Default Changelist" comment="" />
+    <list default="true" id="dadea1a7-18eb-4fb1-9729-15a83d43709f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lendflow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lendflow.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -119,6 +132,9 @@
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
     </include_path>
   </component>
   <component name="ProjectId" id="1qcnIc9ehvPPviDX8Ze7P6BQ3M1" />
@@ -150,10 +166,37 @@
       <option name="presentableId" value="Default" />
       <updated>1617387671506</updated>
       <workItem from="1617387674021" duration="408000" />
+      <workItem from="1617388125416" duration="583000" />
     </task>
+    <task id="LOCAL-00001" summary="add port config to .env.example">
+      <created>1617388157092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617388157092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add port config to .env.example" />
+    <option name="LAST_COMMIT_MESSAGE" value="add port config to .env.example" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="864" y="306" key="CommitChangelistDialog2" timestamp="1617388156940">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="864" y="306" key="CommitChangelistDialog2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617388156940" />
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1617388160218">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617388160218" />
+    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup" timestamp="1617388515320">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617388515320" />
   </component>
 </project>
