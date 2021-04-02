@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dadea1a7-18eb-4fb1-9729-15a83d43709f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_02_185945_create_files_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_02_190235_create_posts_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_02_190256_create_tags_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +184,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617387671506</updated>
       <workItem from="1617387674021" duration="408000" />
-      <workItem from="1617388125416" duration="2821000" />
+      <workItem from="1617388125416" duration="3223000" />
     </task>
     <task id="LOCAL-00001" summary="add port config to .env.example">
       <created>1617388157092</created>
@@ -208,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617389933846</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added migrations">
+      <created>1617391099124</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617391099124</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +225,8 @@
     <MESSAGE value="add port config to .env.example" />
     <MESSAGE value="added jwt support" />
     <MESSAGE value="added tests for login" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests for login" />
+    <MESSAGE value="added migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added migrations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1388" y="379" key="#CLI_Interpreters" timestamp="1617389238920">
@@ -234,10 +241,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1661" y="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389096136" />
-    <state x="864" y="306" key="CommitChangelistDialog2" timestamp="1617389933488">
+    <state x="864" y="306" key="CommitChangelistDialog2" timestamp="1617391098900">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="864" y="306" key="CommitChangelistDialog2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389933488" />
+    <state x="864" y="306" key="CommitChangelistDialog2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617391098900" />
     <state width="834" height="258" key="GridCell.Tab.0.bottom" timestamp="1617389882645">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -258,10 +265,10 @@
     </state>
     <state width="834" height="258" key="GridCell.Tab.0.right/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389882643" />
     <state width="621" height="258" key="GridCell.Tab.0.right/2560.58.2560.1415/0.0.2560.1440/5120.379.1920.1055@0.0.2560.1440" timestamp="1617389367563" />
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1617389936847">
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1617391101515">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389936847" />
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617391101515" />
     <state x="945" y="352" width="670" height="676" key="search.everywhere.popup" timestamp="1617390575456">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

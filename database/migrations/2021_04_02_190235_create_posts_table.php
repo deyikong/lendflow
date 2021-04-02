@@ -18,12 +18,12 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->unsignedBigInteger('owner_id');
-            $table->unsignedBigInteger('main_page_id');
+            $table->unsignedBigInteger('main_image_id');
 
             $table->foreign('owner_id')
                 ->references('id')->on('users');
 
-            $table->foreign('main_page_id')
+            $table->foreign('main_image_id')
                 ->references('id')->on('files');
             $table->timestamps();
         });
