@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dadea1a7-18eb-4fb1-9729-15a83d43709f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/Feature/AuthControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Traits/ActingJWTUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_02_185945_create_files_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_02_190235_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_02_190256_create_tags_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,11 +133,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1qcnIc9ehvPPviDX8Ze7P6BQ3M1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature" />
@@ -184,7 +185,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617387671506</updated>
       <workItem from="1617387674021" duration="408000" />
-      <workItem from="1617388125416" duration="1728000" />
+      <workItem from="1617388125416" duration="2821000" />
     </task>
     <task id="LOCAL-00001" summary="add port config to .env.example">
       <created>1617388157092</created>
@@ -200,16 +201,25 @@
       <option name="project" value="LOCAL" />
       <updated>1617388969459</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added tests for login">
+      <created>1617389933846</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617389933846</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add port config to .env.example" />
     <MESSAGE value="added jwt support" />
-    <option name="LAST_COMMIT_MESSAGE" value="added jwt support" />
+    <MESSAGE value="added tests for login" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests for login" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1388" y="379" key="#CLI_Interpreters" timestamp="1617389238920">
@@ -224,37 +234,37 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1661" y="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389096136" />
-    <state x="864" y="306" key="CommitChangelistDialog2" timestamp="1617388969192">
+    <state x="864" y="306" key="CommitChangelistDialog2" timestamp="1617389933488">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="864" y="306" key="CommitChangelistDialog2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617388969192" />
-    <state width="832" height="258" key="GridCell.Tab.0.bottom" timestamp="1617389811268">
+    <state x="864" y="306" key="CommitChangelistDialog2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389933488" />
+    <state width="834" height="258" key="GridCell.Tab.0.bottom" timestamp="1617389882645">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="832" height="258" key="GridCell.Tab.0.bottom/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389811268" />
+    <state width="834" height="258" key="GridCell.Tab.0.bottom/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389882645" />
     <state width="621" height="258" key="GridCell.Tab.0.bottom/2560.58.2560.1415/0.0.2560.1440/5120.379.1920.1055@0.0.2560.1440" timestamp="1617389367599" />
-    <state width="832" height="258" key="GridCell.Tab.0.center" timestamp="1617389811262">
+    <state width="834" height="258" key="GridCell.Tab.0.center" timestamp="1617389882641">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="832" height="258" key="GridCell.Tab.0.center/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389811262" />
+    <state width="834" height="258" key="GridCell.Tab.0.center/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389882641" />
     <state width="621" height="258" key="GridCell.Tab.0.center/2560.58.2560.1415/0.0.2560.1440/5120.379.1920.1055@0.0.2560.1440" timestamp="1617389367470" />
-    <state width="832" height="258" key="GridCell.Tab.0.left" timestamp="1617389811260">
+    <state width="834" height="258" key="GridCell.Tab.0.left" timestamp="1617389882639">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="832" height="258" key="GridCell.Tab.0.left/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389811260" />
+    <state width="834" height="258" key="GridCell.Tab.0.left/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389882639" />
     <state width="621" height="258" key="GridCell.Tab.0.left/2560.58.2560.1415/0.0.2560.1440/5120.379.1920.1055@0.0.2560.1440" timestamp="1617389367419" />
-    <state width="832" height="258" key="GridCell.Tab.0.right" timestamp="1617389811266">
+    <state width="834" height="258" key="GridCell.Tab.0.right" timestamp="1617389882643">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="832" height="258" key="GridCell.Tab.0.right/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389811266" />
+    <state width="834" height="258" key="GridCell.Tab.0.right/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389882643" />
     <state width="621" height="258" key="GridCell.Tab.0.right/2560.58.2560.1415/0.0.2560.1440/5120.379.1920.1055@0.0.2560.1440" timestamp="1617389367563" />
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1617388971934">
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1617389936847">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617388971934" />
-    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup" timestamp="1617388515320">
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389936847" />
+    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup" timestamp="1617390575456">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617388515320" />
+    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617390575456" />
   </component>
 </project>
