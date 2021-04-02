@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Support\Facades\Hash;
 use Tests\TestCase;
 
 class AuthControllerTest extends TestCase
@@ -24,13 +25,14 @@ protected function setUp(): void
 
     public function testUserCanLoginWithEmail()
     {
+        $this->user->password = Hash::make($this->password);
+        $this->user->save();
         $data = [
             'email' => $this->user->email,
             'password' => $this->password,
         ];
         $response = $this->post('/api/auth/login', $data);
 
-        var_dump($response);
         $response->assertStatus(200)
             ->assertJsonFragment([
                 "token_type"=>"Bearer",
@@ -41,6 +43,8 @@ protected function setUp(): void
 
     public function testUserLoginFailed()
     {
+        $this->user->password = Hash::make($this->password);
+        $this->user->save();
         $data = [
             'email' => $this->user->email,
             'password' => $this->password . '123',
