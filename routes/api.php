@@ -18,6 +18,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// get the redirect not to complain
+Route::get('login', function() {
+    return "login first";
+});
+
 Route::group([
 
     'middleware' => 'api',
@@ -32,9 +37,12 @@ Route::group([
 
 });
 
-Route::group([
-    'prefix' => 'files',
-    'middleware' => 'auth:api'
-], function () {
 
+Route::group([
+    'prefix' => 'users',
+], function () {
+    Route::get('', 'UsersController@index');
+    Route::get('{user}', 'UsersController@show');
+    Route::post('', 'UsersController@store');
+    Route::middleware('auth:api')->put('', 'UsersController@update');
 });

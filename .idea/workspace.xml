@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dadea1a7-18eb-4fb1-9729-15a83d43709f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/UsersControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,16 +153,29 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/Feature" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.AuthControllerTest">
-    <configuration name="AuthControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthControllerTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthControllerTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.UsersControllerTest">
+    <configuration name="UsersControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersControllerTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UsersControllerTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="AuthControllerTest.testUserCanLoginWithEmail" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthControllerTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthControllerTest.php" method="testUserCanLoginWithEmail" scope="Method" />
+    <configuration name="UsersControllerTest.testIndex" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersControllerTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UsersControllerTest.php" method="testIndex" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersControllerTest.testShow" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersControllerTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UsersControllerTest.php" method="testShow" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersControllerTest.testStore" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersControllerTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UsersControllerTest.php" method="testStore" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersControllerTest.testUpdateValid" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersControllerTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UsersControllerTest.php" method="testUpdateValid" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -170,8 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.AuthControllerTest" />
-        <item itemvalue="PHPUnit.AuthControllerTest.testUserCanLoginWithEmail" />
+        <item itemvalue="PHPUnit.UsersControllerTest" />
+        <item itemvalue="PHPUnit.UsersControllerTest.testIndex" />
+        <item itemvalue="PHPUnit.UsersControllerTest.testUpdateValid" />
+        <item itemvalue="PHPUnit.UsersControllerTest.testShow" />
+        <item itemvalue="PHPUnit.UsersControllerTest.testStore" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +201,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617387671506</updated>
       <workItem from="1617387674021" duration="408000" />
-      <workItem from="1617388125416" duration="3223000" />
+      <workItem from="1617388125416" duration="5661000" />
     </task>
     <task id="LOCAL-00001" summary="add port config to .env.example">
       <created>1617388157092</created>
@@ -214,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617391099124</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create models">
+      <created>1617391684142</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617391684142</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +250,8 @@
     <MESSAGE value="added jwt support" />
     <MESSAGE value="added tests for login" />
     <MESSAGE value="added migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="added migrations" />
+    <MESSAGE value="create models" />
+    <option name="LAST_COMMIT_MESSAGE" value="create models" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1388" y="379" key="#CLI_Interpreters" timestamp="1617389238920">
@@ -241,37 +266,37 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1661" y="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389096136" />
-    <state x="864" y="306" key="CommitChangelistDialog2" timestamp="1617391098900">
+    <state x="864" y="306" key="CommitChangelistDialog2" timestamp="1617391683993">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="864" y="306" key="CommitChangelistDialog2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617391098900" />
-    <state width="834" height="258" key="GridCell.Tab.0.bottom" timestamp="1617389882645">
+    <state x="864" y="306" key="CommitChangelistDialog2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617391683993" />
+    <state width="1325" height="367" key="GridCell.Tab.0.bottom" timestamp="1617393762886">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="834" height="258" key="GridCell.Tab.0.bottom/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389882645" />
+    <state width="1325" height="367" key="GridCell.Tab.0.bottom/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617393762886" />
     <state width="621" height="258" key="GridCell.Tab.0.bottom/2560.58.2560.1415/0.0.2560.1440/5120.379.1920.1055@0.0.2560.1440" timestamp="1617389367599" />
-    <state width="834" height="258" key="GridCell.Tab.0.center" timestamp="1617389882641">
+    <state width="1325" height="367" key="GridCell.Tab.0.center" timestamp="1617393762883">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="834" height="258" key="GridCell.Tab.0.center/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389882641" />
+    <state width="1325" height="367" key="GridCell.Tab.0.center/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617393762883" />
     <state width="621" height="258" key="GridCell.Tab.0.center/2560.58.2560.1415/0.0.2560.1440/5120.379.1920.1055@0.0.2560.1440" timestamp="1617389367470" />
-    <state width="834" height="258" key="GridCell.Tab.0.left" timestamp="1617389882639">
+    <state width="1325" height="367" key="GridCell.Tab.0.left" timestamp="1617393762881">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="834" height="258" key="GridCell.Tab.0.left/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389882639" />
+    <state width="1325" height="367" key="GridCell.Tab.0.left/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617393762881" />
     <state width="621" height="258" key="GridCell.Tab.0.left/2560.58.2560.1415/0.0.2560.1440/5120.379.1920.1055@0.0.2560.1440" timestamp="1617389367419" />
-    <state width="834" height="258" key="GridCell.Tab.0.right" timestamp="1617389882643">
+    <state width="1325" height="367" key="GridCell.Tab.0.right" timestamp="1617393762884">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="834" height="258" key="GridCell.Tab.0.right/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617389882643" />
+    <state width="1325" height="367" key="GridCell.Tab.0.right/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617393762884" />
     <state width="621" height="258" key="GridCell.Tab.0.right/2560.58.2560.1415/0.0.2560.1440/5120.379.1920.1055@0.0.2560.1440" timestamp="1617389367563" />
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1617391101515">
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1617391686606">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617391101515" />
-    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup" timestamp="1617390575456">
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617391686606" />
+    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup" timestamp="1617393039557">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617390575456" />
+    <state x="945" y="352" width="670" height="676" key="search.everywhere.popup/2560.33.2560.1440/0.0.2560.1440/5120.354.1920.1080@0.0.2560.1440" timestamp="1617393039557" />
   </component>
 </project>
